@@ -1,0 +1,97 @@
+  <!DOCTYPE html>
+  <html manifest="manifest.appcache">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Slavyana Dianova Chervenkondeva">
+    <meta name="description" content="The most beautiful town in Bulgaria">
+    <meta name="keywords" content="Bulgaria, Sliven, history, vacation, holiday, sightseeing">
+    <title>Welcome to Sliven | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjTiDT-a07Xz8m_C6vLwdb6yaJBwhHjh4&callback=initMap">
+    </script>
+    <script src="js/javascript.js"></script>
+    <script src="js/location.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Visit<span class="highlight">Sliven</span></h1>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <nav class= "topnav" id="myTopnav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="sights.html">Sights</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="main">
+      <div class="container">
+        <article class="main-col">
+          <h1 class="page title">About Sliven</h1>
+          <p class="dark">
+            Located in southeastern Bulgaria, Sliven is the eighth largest city in Bulgaria. The city sits below the famous rocky massif, Sinite Kamani (The Blue Rocks), and is known for being one of the windiest cities in Bulgaria. Surrounded by natural splendor, the three rivers--Asenokvska, Novoselska, and Manastirska--converge in the city. The city is famous for the Bulgarian Haiduts who fought against the Ottoman Turks during the 19th century.
+          </p>
+          <div class="media">
+            <img class="location" src="./img/map.png" alt="Location of Sliven in Bulgaria" align="center">
+            <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93881.954054516!2d26.255022743926936!3d42.665359016182144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a620c66ffa39c9%3A0x400a01269bf59e0!2sSliven%2C+Bulgaria!5e0!3m2!1sen!2suk!4v1520355623913" allowfullscreen align="center"></iframe>
+          </div>
+
+
+
+
+        
+          <p>
+            The city features many pleasant cafés, a large outdoor produce market and pedestrian boulevard through the city center. Sliven is one of the few cities in Bulgaria which has large Boulevards and also beautiful landscape architecture. It also has a lot of flowers and tress giving the town the aroma of late spring perfume.
+          </p>
+          <p>
+            Sliven is situated in the sub-Bulkan region and is approximately 100km from Black Sea. The climate is mild with relatively warm summers, a long autumn, wet spring and mild winters. Temperatures average 23.2°C in the summer and 1.2°C in the winter. The "bora" wind blows almost 50% of the time in Sliven.
+          </p>
+          <h3>Get In</h3>
+          <p>
+            Train Sliven is on the Sofia-Burgas railway, with regular trains throughout Bulgaria. Traveling by train offers amazing views of the Bulgarian countryside. Daily trains run to Sofia, Burgas, Stara Zagora, Ruse, Plovdiv, Kazanlak and Varna.
+          </p>
+          <p>
+            The train station is located near the Nadezhda (надежда) neighborhood in the southern end of the city.
+          </p>
+          <p>
+            Bus Sliven's small bus station offers regular service to all major cities and most regional villages. Several buses per day leave to Sofia (4.5 hours), Plovdiv (3 hours) and Veliko Tarnovo (2 - 2.5 hours). Hourly buses depart for Burgas (1.5 hours) and Stara Zagora (1 hour).
+          </p>
+          <p>
+            The bus station is located a few blocks south of the big Bila grocery store.
+          </p>
+        <h3>Get Around</h3>
+        <p>
+          When traveling around Sliven, there are many ways of public transportation. They include: buses, trolleys and minibuses. They cover the main streets of the city. There are different bus lines running along different main boulevards. The main lines are: No. 116, No. 1, No. 20, No. 7, No. 4 and No. 12. Line No. 1 reaches the railway station and the bus station. The price of a single ticket is 0.8 leva.
+        </p>
+        <p>
+          Sliven is a small city and most places are easy to walk to. It is a flat city with wide sidewalks along the main streets. The city center is closed to cars and has a beautiful tree-line pedestrian street, with many cafes and shops.
+        </p>
+        <div id="videos">
+          <h2>The Beauty of Sliven all year round.</h2>
+          <div class="media">
+              <iframe class="location" src="https://www.youtube.com/embed/6CeYKwYqfoQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center" ></iframe>
+              <iframe class="location" src="https://www.youtube.com/embed/d4rKJWWxo5Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+          </div>
+        </div>
+
+
+        <h1 class="page title">Find Sliven</h1>
+        <button onclick="getLocation()">Show my location</button>
+        <div id="mapholder"></div>
+
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p>VisitSliven, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+  </html>

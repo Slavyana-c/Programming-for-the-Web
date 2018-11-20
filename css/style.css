@@ -1,0 +1,658 @@
+body{
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.dark{
+  padding: 15px;
+  background: #E8E8E8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+header{
+   background: #005A04;
+   color:#ffffff;
+   padding-top: 30px;
+   min-height: 80px;
+   border-bottom: #E5E4D7 3px double;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  letter-spacing: 0.05px;
+  display: inline;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+}
+
+header #branding{
+  float: left;
+}
+
+header a{
+  float: right;
+  margin-top: 15px;
+}
+
+header #branding h1{
+   margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 15px;
+}
+
+header .icon {
+  display: none;
+}
+
+@media screen and (max-width: 696px) {
+  .topnav a{display: none;}
+  header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 696px) {
+  .topnav.responsive {position: relative;}
+  header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a{
+    float: none;
+    text-align: left;
+    display: block;
+  }
+}
+
+header .highlight, header .current a{
+  color: #B3A580;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #DED29E;
+  text-shadow: 0.5px 0 0px #cccccc;
+}
+
+#showcase{
+  min-height: 400px;
+  background: url("../img/show.jpg"), no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#showcase h1{
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+#showcase p{
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+#boxes{
+  margin-top: 40px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: auto;
+  max-width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width:1060px) {
+  #boxes .box img{
+    height: 150px;
+  }
+}
+@media screen and (max-width:750px) {
+  #boxes .box{
+    width: 100%;
+  }
+  
+  #showcase h1{
+    font-size: 30px;
+  }
+}
+
+#main h1{
+  font-size: 30px;
+}
+
+#institutes{
+  font-size: 20px;
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.photostring{
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  height: 300px;
+  align-self: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.long-container{
+  width: 100%;
+  height: 100%;
+}
+
+.slide-pic{
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+
+.see-previous,
+.see-next{
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.see-next{
+  right: 0;
+  left: auto;
+}
+
+.arrow-prev,
+.arrow-next{
+  width: 100%;
+  align-self: center;
+}
+
+.see-previous:hover,
+.see-next:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#one{
+  background-image: url("../img/gallery.jpg");
+}
+
+#two{
+  background-image: url("../img/dramatheatre.jpg");
+}
+
+#three{
+  background-image: url("../img/folk.jpg");
+}
+
+#four{
+  background-image: url("../img/mirkovich.jpg");
+}
+
+#five{
+  background-image: url("../img/puppettheatre.jpg");
+}
+
+#six{
+  background-image: url("../img/historymuseum.jpg");
+}
+
+#seven{
+  background-image: url("../img/industry.jpg");
+}
+
+#eight{
+  background-image: url("../img/library.jpg");
+}
+
+.media{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 4%;
+
+}
+
+
+.location{
+  width: 45%;
+  height: 260px;
+  border: 1px green solid;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width:750px) {
+  .location{
+    height: 200px;
+  }
+}
+
+
+@media screen and (max-width:615px) {
+  .location{
+    width: 70%;
+    height: 150px;
+    margin-left: 12%;
+    margin-top: 15px;
+  }
+}
+
+
+#catalogue li{
+  list-style: none;
+  padding: 20px;
+  border: #DED29E, solid, 1px;
+  margin-bottom: 5px;
+  background: #E8E8E8;
+
+}
+
+.left{
+  width: 30%;
+  float: left;
+  margin: 20px;
+}
+
+.right{
+  width: 30%;
+  float: right;
+  margin: 20px;
+}
+.left img, .right img{
+  border: 1px green solid;
+  vertical-align: top;
+  width: 100%;
+}
+.left figcaption, .right figcaption{
+  text-align: center;
+  font-style: italic;
+  vertical-align: bottom;
+}
+
+
+
+.gallery{
+  margin: 10px 50px;
+}
+
+.gallery img{
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.gallery img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #685642;
+  color: #DED29E;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media print{
+  body{
+      font-family: Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+      background-color: white;
+    }
+    
+    .container{
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    header ul{
+      display: none;
+    }
+    
+    .dark{
+      padding: 15px;
+      background: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    header{
+       background: #005A04;
+       color:#ffffff;
+       padding-top: 30px;
+       min-height: 80px;
+       border-bottom: #E5E4D7 3px double;
+    }
+    
+    header a{
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    header #branding{
+      float: left;
+    }
+    
+    
+    header #branding h1{
+       margin: 0;
+    }
+    
+    header .highlight, header .current a{
+      color: #B3A580;
+      font-weight: bold;
+    }
+    
+    #showcase{
+      min-height: 400px;
+      background: url("../img/show.jpg"), no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+    }
+    
+    #showcase h1{
+      margin-top: 20px;
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+    
+    #showcase p{
+      margin-top: 0px;
+      font-size: 20px;
+    }
+    
+    #boxes{
+      margin-top: 40px;
+    }
+    
+    #boxes .box{
+      float: left;
+      text-align: center;
+      width: 30%;
+      padding: 10px;
+    }
+    
+    #boxes .box img{
+      width: auto;
+      max-width: 100%;
+      height: 100px;
+    }
+    
+    @media screen and (max-width:1060px) {
+      #boxes .box img{
+        height: 150px;
+      }
+    }
+    @media screen and (max-width:750px) {
+      #boxes .box{
+        width: 100%;
+      }
+      
+      #showcase h1{
+        font-size: 30px;
+      }
+    }
+    
+    #main h1{
+      font-size: 30px;
+    }
+    
+    #institutes{
+      font-size: 20px;
+      list-style-type: circle;
+      padding-left: 20px;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .photostring{
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      height: 200px;
+      align-self: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .long-container{
+      width: 100%;
+      height: 100%;
+    }
+    
+    .slide-pic{
+      float: left;
+      width: 200px;
+      height: 100%;
+    }
+    
+    .see-previous,
+    .see-next{
+      height: 100%;
+      width: 50px;
+      position: absolute;
+      left: 0;
+      display: flex;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    .see-next{
+      right: 0;
+      left: auto;
+    }
+    
+    .arrow-prev,
+    .arrow-next{
+      width: 100%;
+      align-self: center;
+    }
+    
+    .see-previous:hover,
+    .see-next:hover{
+      background-color: rgba(0,0,0,0.5);
+    }
+    
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    #one{
+      background-image: url("../img/gallery.jpg");
+    }
+    
+    #two{
+      background-image: url("../img/dramatheatre.jpg");
+    }
+    
+    #three{
+      background-image: url("../img/folk.jpg");
+    }
+    
+    #four{
+      background-image: url("../img/mirkovich.jpg");
+    }
+    
+    #five{
+      background-image: url("../img/puppettheatre.jpg");
+    }
+    
+    #six{
+      background-image: url("../img/historymuseum.jpg");
+    }
+    
+    #seven{
+      background-image: url("../img/industry.jpg");
+    }
+    
+    #eight{
+      background-image: url("../img/library.jpg");
+    }
+    
+    .media{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 4%;
+    
+    }
+    
+    .location{
+      width: 45%;
+      height: 260px;
+      border: none;
+      margin-right: 20px;
+    }
+    
+    @media screen and (max-width:750px) {
+      .location{
+        height: 200px;
+      }
+    }
+    
+    @media screen and (max-width:615px) {
+      .location{
+        width: 70%;
+        height: 150px;
+        margin-left: 12%;
+        margin-top: 15px;
+      }
+    }
+    
+    
+    #catalogue li{
+      list-style: none;
+      padding: 0px;
+      border: none;
+      margin-bottom: 5px;
+      background: white
+    
+    }
+    
+    .left{
+      width: 30%;
+      float: left;
+      margin: 20px;
+    }
+    
+    .right{
+      width: 30%;
+      float: right;
+      margin: 20px;
+    }
+    .left img, .right img{
+      border: none;
+      vertical-align: top;
+      width: 100%;
+    }
+    .left figcaption, .right figcaption{
+      text-align: center;
+      font-style: italic;
+      vertical-align: bottom;
+    }
+    
+    .gallery{
+      margin: 10px 50px;
+    }
+    
+    .gallery img{
+      width: 230px;
+      padding: 5px;
+      filter: grayscale(100%);
+      transition: 1s;
+    }
+    
+    .gallery img:hover{
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+    
+    footer{
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #685642;
+      color: #DED29E;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+}

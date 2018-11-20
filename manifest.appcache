@@ -1,0 +1,21 @@
+CACHE MANIFEST
+
+CACHE:
+about.html
+culture.html
+history.html
+index.html
+sights.html
+css/style.css
+css/lightbox.min.css
+js/javascript.js
+js/lightbox-plus-jquery.min.js
+js/location.js
+js/slides.js
+
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
